@@ -1,0 +1,15 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+.sidebar a {
+    text-decoration: none!important;
+    color: black;
+    padding: 13px;
+    margin: 6px 0 6px 13px;
+    border:1px solid gray;
+    background-color: rgb(188, 194, 200);
+
+}
