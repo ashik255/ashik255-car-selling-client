@@ -11,7 +11,7 @@ const PlacerOrder = (props) => {
     const [cart,setCart] =useState([]);
 
     useEffect(() => {
-        fetch('https://sleepy-forest-29303.herokuapp.com/services')
+        fetch('https://car-selling-server-production.up.railway.app/services')
             .then(res => res.json())
             .then(data => {
                 setDetails(data);
@@ -37,7 +37,7 @@ const PlacerOrder = (props) => {
         //         // console.log("from handle add to cart",data)
                 // const newCart = [...cart, data];
                 // setCart(newCart);
-                fetch('https://sleepy-forest-29303.herokuapp.com/orders', {
+                fetch('https://car-selling-server-production.up.railway.app/orders', {
                     method: 'POST',
                     headers: {
                         "content-type": 'application/json'
@@ -78,8 +78,8 @@ const PlacerOrder = (props) => {
                         <Row className="mb-3">
                             <Form.Group as={Col} controlId="formGridEmail">
                                 <Form.Label>Name</Form.Label>
-                                <Form.Control type="email"
-                                 type="name"
+                                <Form.Control
+                                 type="names"
                                 name="name"
                                
                                 onChange={handleOnBlur}  placeholder={user?.displayName}  />

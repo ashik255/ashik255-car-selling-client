@@ -19,7 +19,7 @@ const AddProduct = () => {
         const products = {
             ...addProduct
         }
-        fetch('https://sleepy-forest-29303.herokuapp.com/services',{
+        fetch('https://car-selling-server-production.up.railway.app/services',{
         method:'POST',
         headers:{
             'content-type':'application/json'

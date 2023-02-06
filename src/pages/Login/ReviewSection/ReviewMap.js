@@ -6,7 +6,7 @@ const ReviewMap = () => {
     const [data,setData] = useState([]);
 
     useEffect(() => {
-        const url = `https://sleepy-forest-29303.herokuapp.com/reviews`
+        const url = `https://car-selling-server-production.up.railway.app/reviews`
         console.log(url);
         fetch(url)
         .then(res=>res.json())

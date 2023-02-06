@@ -12,7 +12,7 @@ const MakeAdmin = () => {
         const handleAdminSubmit= e =>{
 
             const user = { email };
-            fetch('https://sleepy-forest-29303.herokuapp.com/users/admin', {
+            fetch('https://car-selling-server-production.up.railway.app/users/admin', {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

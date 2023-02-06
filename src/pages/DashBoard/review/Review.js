@@ -30,7 +30,7 @@ const Review = () => {
                 const reviews = {
                     ...review
                 }
-                fetch('https://sleepy-forest-29303.herokuapp.com/reviews',{
+                fetch('https://car-selling-server-production.up.railway.app/reviews',{
                 method:'POST',
                 headers:{
                     'content-type':'application/json'

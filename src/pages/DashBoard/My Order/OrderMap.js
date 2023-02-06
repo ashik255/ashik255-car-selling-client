@@ -8,7 +8,7 @@ const OrderMap = () => {
 
     useEffect(() => {
         setIsSpinnerTrue(true);
-        fetch('https://sleepy-forest-29303.herokuapp.com/orders')
+        fetch('https://car-selling-server-production.up.railway.app/orders')
             .then(res => res.json())
             .then(data => setOrder(data))
         setIsSpinnerTrue(false);

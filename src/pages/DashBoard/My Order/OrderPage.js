@@ -14,7 +14,7 @@ const OrderPage = (props) => {
         console.log('removed id',id)
         const  proceed = window.confirm('Are you sure ,you want to delete?')
         if(proceed){
-            const url = `https://sleepy-forest-29303.herokuapp.com/orders/${id}`
+            const url = `https://car-selling-server-production.up.railway.app/orders/${id}`
         fetch(url, {
             method:'DELETE'
         })
