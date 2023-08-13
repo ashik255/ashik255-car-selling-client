@@ -5,7 +5,7 @@ import Explore from './Explore';
 const Explores = () => {
     const [data,setData] = useState([]);
     useEffect(()=>{
-        fetch('https://car-selling-server-production.up.railway.app/services')
+        fetch('https://car-selling-server-delta.vercel.app/services')
         .then(res => res.json())
         .then (data => {
             setData(data);

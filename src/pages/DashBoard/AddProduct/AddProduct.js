@@ -19,7 +19,7 @@ const AddProduct = () => {
         const products = {
             ...addProduct
         }
-        fetch('https://car-selling-server-production.up.railway.app/services',{
+        fetch('https://car-selling-server-delta.vercel.app/services',{
         method:'POST',
         headers:{
             'content-type':'application/json'

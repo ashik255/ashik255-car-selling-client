@@ -77,7 +77,7 @@ const useFirebase = () => {
 
 
     useEffect(()=>{
-        fetch(`https://car-selling-server-production.up.railway.app/users/${user.email}`)
+        fetch(`https://car-selling-server-delta.vercel.app/users/${user.email}`)
         .then(res => res.json())
         .then(data => {
             // console.log(data);
@@ -96,7 +96,7 @@ const useFirebase = () => {
     }
     const saveUser = (email,displayName,method) => {
         const user = { email,displayName };
-        fetch('https://car-selling-server-production.up.railway.app/users', {
+        fetch('https://car-selling-server-delta.vercel.app/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'

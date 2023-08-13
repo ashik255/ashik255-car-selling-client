@@ -8,7 +8,7 @@ const OrderMap = () => {
 
     useEffect(() => {
         setIsSpinnerTrue(true);
-        fetch('https://car-selling-server-production.up.railway.app/orders')
+        fetch('https://car-selling-server-delta.vercel.app/orders')
             .then(res => res.json())
             .then(data => setOrder(data))
         setIsSpinnerTrue(false);

@@ -11,7 +11,7 @@ const PlacerOrder = (props) => {
     const [cart,setCart] =useState([]);
 
     useEffect(() => {
-        fetch('https://car-selling-server-production.up.railway.app/services')
+        fetch('https://car-selling-server-delta.vercel.app/services')
             .then(res => res.json())
             .then(data => {
                 setDetails(data);
@@ -37,7 +37,7 @@ const PlacerOrder = (props) => {
         //         // console.log("from handle add to cart",data)
                 // const newCart = [...cart, data];
                 // setCart(newCart);
-                fetch('https://car-selling-server-production.up.railway.app/orders', {
+                fetch('https://car-selling-server-delta.vercel.app/orders', {
                     method: 'POST',
                     headers: {
                         "content-type": 'application/json'

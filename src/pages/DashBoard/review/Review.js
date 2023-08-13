@@ -30,7 +30,7 @@ const Review = () => {
                 const reviews = {
                     ...review
                 }
-                fetch('https://car-selling-server-production.up.railway.app/reviews',{
+                fetch('https://car-selling-server-delta.vercel.app/reviews',{
                 method:'POST',
                 headers:{
                     'content-type':'application/json'
